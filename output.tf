@@ -1,1 +1,4 @@
-# Insert output values here, if no outputs are defined delete this file
+output "secret" {
+  value = aws_secretsmanager_secret.secret
+  description = "Outputs the secret object"
+}

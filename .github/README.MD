@@ -1,14 +1,17 @@
 # Terraflops Terraform Module
  
-### Module name
+### AWS Secrets Manager Secret
 
-Insert module description
+Creates a Secret in AWS Secrets Manager
 
 #### Example usage
 
 ```hcl-terraform
 module "example" {
-  source = "git::https://github.com/TerraFlops/module-name?ref=v1.0"
-  ...
+  source = "git::https://github.com/TerraFlops/aws-secrets-manager-secret?ref=v1.0"
+  
+  path = "/my/secret/path"
+  value = "xxxxxxxxxxxxxxxxx"
+  description = "IAM user AWS access key ID"
 }
 ```
